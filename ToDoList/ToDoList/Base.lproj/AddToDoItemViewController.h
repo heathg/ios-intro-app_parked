@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  AddToDoItemViewController.h
 //  ToDoList
 //
 //  Created by Heath Glover on 24/04/2015.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface AddToDoItemViewController : UIViewController
 
 @end
-
