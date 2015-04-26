@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		111134681AECC2BA007D610B /* ToDoItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 111134671AECC2BA007D610B /* ToDoItem.m */; };
 		117310731AEA01B30043A88E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 117310721AEA01B30043A88E /* main.m */; };
 		117310761AEA01B30043A88E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 117310751AEA01B30043A88E /* AppDelegate.m */; };
 		1173107C1AEA01B30043A88E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1173107A1AEA01B30043A88E /* Main.storyboard */; };
@@ -30,6 +31,8 @@
 		111134611AEA3AC3007D610B /* Base */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = Base; path = Base.lproj/AddToDoItemViewController.m; sourceTree = "<group>"; };
 		111134631AEA3B79007D610B /* Base */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Base; path = Base.lproj/ToDoListTableViewController.h; sourceTree = "<group>"; };
 		111134651AEA3B79007D610B /* Base */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = Base; path = Base.lproj/ToDoListTableViewController.m; sourceTree = "<group>"; };
+		111134661AECC2BA007D610B /* ToDoItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToDoItem.h; sourceTree = "<group>"; };
+		111134671AECC2BA007D610B /* ToDoItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToDoItem.m; sourceTree = "<group>"; };
 		1173106D1AEA01B30043A88E /* ToDoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		117310711AEA01B30043A88E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		117310721AEA01B30043A88E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -85,6 +88,8 @@
 				117310741AEA01B30043A88E /* AppDelegate.h */,
 				117310751AEA01B30043A88E /* AppDelegate.m */,
 				1173107A1AEA01B30043A88E /* Main.storyboard */,
+				111134661AECC2BA007D610B /* ToDoItem.h */,
+				111134671AECC2BA007D610B /* ToDoItem.m */,
 				111134621AEA3B79007D610B /* ToDoListTableViewController.h */,
 				111134641AEA3B79007D610B /* ToDoListTableViewController.m */,
 				1173107D1AEA01B30043A88E /* Images.xcassets */,
@@ -171,6 +176,7 @@
 				TargetAttributes = {
 					1173106C1AEA01B30043A88E = {
 						CreatedOnToolsVersion = 6.3;
+						DevelopmentTeam = 99F563QQ7E;
 					};
 					117310851AEA01B30043A88E = {
 						CreatedOnToolsVersion = 6.3;
@@ -222,6 +228,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				111134681AECC2BA007D610B /* ToDoItem.m in Sources */,
 				117310761AEA01B30043A88E /* AppDelegate.m in Sources */,
 				117310731AEA01B30043A88E /* main.m in Sources */,
 			);
@@ -383,9 +390,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = ToDoList/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -393,9 +403,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = ToDoList/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
